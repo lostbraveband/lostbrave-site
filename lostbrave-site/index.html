@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lost Brave | Original rock, blues, folk &amp; Americana from Milwaukee</title>
+  <meta name="description" content="Lost Brave is a five-piece original band from Milwaukee, Wisconsin, playing rock, blues, folk and Americana. Shows, music, photos and shirts.">
+  <meta property="og:title" content="Lost Brave">
+  <meta property="og:description" content="Original rock, blues, folk &amp; Americana from Milwaukee.">
+  <meta property="og:image" content="https://lostbrave.com/images/hero.jpg">
+  <meta property="og:url" content="https://lostbrave.com/">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#17222e">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#shows">Skip to shows</a>
+
+<header class="topbar">
+  <a class="mark" href="#top"><img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="" width="25" height="28">Lost Brave</a>
+  <nav aria-label="Sections">
+    <a href="#shows">Shows</a>
+    <a href="#listen">Listen</a>
+    <a href="#photos">Photos</a>
+    <a href="#band">Band</a>
+    <a href="#shirts">Shirts</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="social" data-social></div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-head">
+    <h1 class="poster" aria-label="Lost Brave">
+      <span data-text="Lost">Lost</span>
+      <span data-text="Brave">Brave</span>
+    </h1>
+    <img class="pick" src="images/logo.png" srcset="images/logo@2x.png 2x" alt="Lost Brave guitar-pick logo" width="105" height="120">
+  </div>
+  <figure class="hero-photo duo">
+    <img src="images/hero.jpg" alt="The five members of Lost Brave" onerror="this.parentNode.hidden=true">
+  </figure>
+  <div class="hero-foot">
+    <blockquote class="lyric" id="lyric"><p>Rock, blues, folk &amp; Americana from Milwaukee</p></blockquote>
+    <a class="stub" id="next-show" href="#shows" hidden>
+      <span class="stub-label">Next show</span>
+      <span class="stub-date"></span>
+      <span class="stub-venue"></span>
+    </a>
+  </div>
+</section>
+
+<main>
+  <section id="shows" class="block">
+    <h2>Shows</h2>
+    <ol id="upcoming" class="gigs"></ol>
+    <p id="no-upcoming" class="empty-note" hidden>New dates are on the way. Join the mailing list or follow us to hear first.</p>
+    <details class="past" id="past-wrap" hidden>
+      <summary>Where we've played</summary>
+      <ol id="past" class="gigs gigs-past"></ol>
+    </details>
+  </section>
+
+  <section id="listen" class="block">
+    <h2>Listen</h2>
+    <p class="lede" id="music-note"></p>
+    <div id="listen-links" class="chips"></div>
+    <div id="videos" class="videos"></div>
+  </section>
+
+  <section id="photos" class="block" hidden>
+    <h2>Photos</h2>
+    <div id="gallery" class="gallery"></div>
+  </section>
+
+  <section id="band" class="brick">
+    <div class="block">
+      <h2>The band</h2>
+      <div id="about-text" class="about"></div>
+      <ul id="members" class="members"></ul>
+    </div>
+  </section>
+
+  <section id="shirts" class="block">
+    <h2>Shirts</h2>
+    <div class="shirts">
+      <div id="shirt-photos" class="shirt-photos"></div>
+      <div class="shirt-info">
+        <div id="merch-list"></div>
+        <p class="buy-note">Want one? Send us a message with your style and size, and we'll have it ready for you at the next show.</p>
+        <div class="chips" data-message></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="list" class="block signup" data-needs-form>
+    <h2>Hear it first</h2>
+    <p class="lede">New songs and show dates, straight to your inbox. A few emails a year, never more.</p>
+    <form class="signup-form" data-form="signup" novalidate>
+      <label class="field"><span>First name</span><input name="name" autocomplete="given-name"></label>
+      <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
+      <button class="btn" type="submit">Join the list</button>
+      <p class="form-status" role="status"></p>
+    </form>
+  </section>
+
+  <section id="contact" class="block contact">
+    <h2>Book us, or just say hello</h2>
+    <div class="contact-grid">
+      <form class="contact-form" data-form="contact" data-needs-form novalidate>
+        <label class="field"><span>Your name</span><input name="name" autocomplete="name" required></label>
+        <label class="field"><span>Your email</span><input name="email" type="email" autocomplete="email" required></label>
+        <label class="field"><span>What's it about?</span>
+          <select name="topic">
+            <option>Booking a show</option>
+            <option>Press or media</option>
+            <option>Shirts</option>
+            <option>Just saying hello</option>
+          </select>
+        </label>
+        <label class="field field-wide"><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+        <p class="form-status" role="status"></p>
+      </form>
+      <div>
+        <p class="contact-alt">Or message us directly:</p>
+        <div id="contact-links" class="contact-links"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span class="mark"><img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="" width="25" height="28">Lost Brave</span>
+  <div class="social" data-social></div>
+  <p>Milwaukee, Wisconsin. &copy; <span id="year"></span></p>
+</footer>
+
+<script src="config.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lost Brave | Booking kit</title>
+  <!-- Unlisted page: not linked from the site and kept out of search engines. Share the link directly. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#17222e">
+  <link rel="icon" href="../images/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script>window.BASE = "../";</script>
+</head>
+<body>
+
+<header class="topbar">
+  <a class="mark" href="../"><img src="../images/logo.png" srcset="../images/logo@2x.png 2x" alt="" width="25" height="28">Lost Brave</a>
+  <nav aria-label="Sections">
+    <a href="#plot">Stage plot</a>
+    <a href="#logos">Logos</a>
+    <a href="#press-photos">Photos</a>
+    <a href="#kit-videos">Video</a>
+    <a href="#kit-contact">Contact</a>
+  </nav>
+  <div class="social" data-social></div>
+</header>
+
+<section class="kit-intro">
+  <div class="hero-head">
+  <h1 class="poster" aria-label="Lost Brave booking kit">
+    <span data-text="Booking">Booking</span>
+    <span data-text="kit">kit</span>
+  </h1>
+  <img class="pick" src="../images/logo.png" srcset="../images/logo@2x.png 2x" alt="Lost Brave guitar-pick logo" width="105" height="120">
+  </div>
+  <p class="lede">For venues, promoters and press. Everything on this page is approved for promoting a Lost Brave show. Download what you need.</p>
+  <dl class="facts" id="facts"></dl>
+</section>
+
+<main>
+  <section class="block kit-bio">
+    <h2>About Lost Brave</h2>
+    <div id="pitch"></div>
+    <ul id="members" class="members"></ul>
+  </section>
+
+  <section class="block" id="plot">
+    <h2>Stage plot</h2>
+    <div class="plot" id="plot-files"></div>
+    <h3 class="sub" id="tech-head" hidden>Tech and input notes</h3>
+    <p class="tech" id="tech"></p>
+  </section>
+
+  <section class="block logos" id="logos">
+    <h2>Logos</h2>
+    <div class="downloads" id="logo-files"></div>
+  </section>
+
+  <section class="block" id="press-photos">
+    <h2>Press photos</h2>
+    <div class="downloads" id="photo-files"></div>
+  </section>
+
+  <section class="block" id="kit-videos" hidden>
+    <h2>Video</h2>
+    <div class="videos" id="video-list"></div>
+  </section>
+
+  <section class="block" id="kit-shows" hidden>
+    <h2>Recent shows</h2>
+    <ol class="gigs gigs-past" id="recent"></ol>
+  </section>
+
+  <section class="block contact" id="kit-contact">
+    <h2>Booking contact</h2>
+    <div id="contact-links" class="contact-links"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span class="mark">Lost Brave</span>
+  <div class="social" data-social></div>
+  <p><a href="../">lostbrave.com</a></p>
+</footer>
+
+<script src="../config.js"></script>
+<script src="../assets/common.js"></script>
+<script src="../assets/booking.js"></script>
+</body>
+</html>
