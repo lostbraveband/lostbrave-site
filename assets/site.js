@@ -118,7 +118,8 @@
 
   // Photo gallery (duotone; full colour on hover and in the viewer)
   LB.listFolder("photos").then(function (files) {
-    var items = files.filter(function (f) { return f.isImage; }).map(function (f) { return { path: f.path, cap: LB.captionFromName(f.name) }; });
+    // Shown in file-name order: 01-..., 02-..., 03-...
+    var items = files.filter(function (f) { return f.isImage; }).reverse().map(function (f) { return { path: f.path, cap: LB.captionFromName(f.name) }; });
     if (!items.length) return;
     $("photos").hidden = false;
     items.forEach(function (p, i) {

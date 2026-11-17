@@ -133,7 +133,7 @@
   };
 
   LB.captionFromName = function (name) {
-    return name.replace(/\.[a-z0-9]+$/i, "").replace(/^\d{4}[-_]?\d{2}[-_]?\d{2}[-_ ]*/, "").replace(/[-_]+/g, " ").trim();
+    return name.replace(/\.[a-z0-9]+$/i, "").replace(/^\d{4}[-_]?\d{2}[-_]?\d{2}[-_ ]*/, "").replace(/^\d{1,3}[-_ ]+/, "").replace(/[-_]+/g, " ").trim();
   };
 
   // Resized copy via a free image service, so big phone photos load fast. Falls back to the original.
