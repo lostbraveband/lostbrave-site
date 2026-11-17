@@ -1,0 +1,14 @@
+# One lyric per line, written as:  lyric line | Song title
+# A random one appears under the band name on each visit.
+# Lines starting with # are ignored.
+Make it mine, keep it mine—no present like our time. | 4|4 Time
+Give you little but merely words of on conditional love. | Epiphany
+Seeking your protection and your satisfaction. | Resolution
+Nothing worthwhile to say. | Nothing Worthwhile to Say
+No waiting for the weekend to swallow down our weak ends. | Priorities
+Bigger than now to be here at all. | Into the Light of the Sun
+Wish you live half as good at my age. | Wish For You
+Only then will I find the time to sort through the shards of my shattered soul. | Shattered Soul
+When time turns the table, and the mighty have fallen. | The Fuse
+Hearing music live reminds us not to grow old. | When We Come Back Down
+Red Light, Yellow Light, Green Light… Anything Goes | Anything Goes
