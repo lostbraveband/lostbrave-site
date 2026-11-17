@@ -132,8 +132,17 @@
       }).catch(function () { return []; });
   };
 
+  // File name to caption: "01-live-at-linnemans-nov-2026.jpg" -> "Live at Linnemans Nov 2026"
+  var SMALL = /^(a|an|and|at|by|for|from|in|of|on|or|the|to|with)$/;
   LB.captionFromName = function (name) {
-    return name.replace(/\.[a-z0-9]+$/i, "").replace(/^\d{4}[-_]?\d{2}[-_]?\d{2}[-_ ]*/, "").replace(/^\d{1,3}[-_ ]+/, "").replace(/[-_]+/g, " ").trim();
+    var words = name.replace(/\.[a-z0-9]+$/i, "").replace(/^\d{4}[-_]?\d{2}[-_]?\d{2}[-_ ]*/, "").replace(/^\d{1,3}[-_ ]+/, "")
+      .replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim().split(" ");
+    return words.map(function (w, i) {
+      if (!w || /[A-Z]/.test(w)) return w;                 // keep words you already capitalised (WAMI, MUSIC6S)
+      if (/^(wami|mke|ep|wi|usa|dj|tv)$/.test(w)) return w.toUpperCase(); // common acronyms
+      if (i > 0 && SMALL.test(w)) return w;                // small words stay lowercase mid-caption
+      return w.charAt(0).toUpperCase() + w.slice(1);
+    }).join(" ");
   };
 
   // Resized copy via a free image service, so big phone photos load fast. Falls back to the original.
