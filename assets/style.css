@@ -272,7 +272,7 @@ a { color: var(--amber); }
 /* ================= Booking kit page ================= */
 .kit-intro { max-width: 1120px; margin: 0 auto; padding: 130px var(--pad) 0; }
 .kit-intro { --poster: clamp(72px, 14vw, 190px); }
-.kit-intro .lede { margin-top: 28px; }
+.kit-intro .lede { margin-top: 28px; max-width: none; }
 .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0; margin: 40px 0 0; border-top: 2px solid var(--lake-3); }
 .facts div { padding: 18px 20px 18px 0; border-bottom: 2px solid var(--lake-3); }
 .facts dt { font: 700 19px/1 var(--show); color: var(--brick-dim); margin-bottom: 6px; }
@@ -291,7 +291,7 @@ a { color: var(--amber); }
 .plot .dl-preview img { object-fit: contain; }
 .kit-empty { font-style: italic; color: var(--steel); margin: 0; }
 .tech { white-space: pre-line; max-width: 64ch; }
-.kit-bio p { max-width: 62ch; }
+.kit-bio p { max-width: none; }
 .sub { font: 900 34px/1 var(--show); text-transform: uppercase; margin: 48px 0 12px; }
 .plot .dl-preview:has(.dl-file) { aspect-ratio: 16 / 7; background: var(--lake-2); max-width: 520px; }
 
