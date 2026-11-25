@@ -224,7 +224,7 @@ a { color: var(--amber); }
 .brick h2 { color: var(--lake); }
 .about { columns: 2 360px; column-gap: 56px; font-size: 20px; line-height: 1.7; }
 .about p { margin: 0 0 1em; break-inside: avoid; }
-.about p:first-child { font: italic 400 clamp(24px, 2.5vw, 30px)/1.42 var(--read); column-span: all; max-width: 34ch; margin-bottom: 1.2em; }
+.about p:first-child { font: italic 400 clamp(24px, 2.5vw, 30px)/1.42 var(--read); column-span: all; max-width: none; margin-bottom: 1.2em; }
 .brick a { color: var(--rosin); }
 
 /* ---------- Shirts ---------- */
