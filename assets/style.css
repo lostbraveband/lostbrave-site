@@ -127,7 +127,7 @@ a { color: var(--amber); }
   margin: 0 0 40px; font: 900 clamp(56px, 9vw, 120px)/.85 var(--show);
   text-transform: uppercase; color: var(--brick); letter-spacing: -.005em;
 }
-.lede { font: italic 400 clamp(21px, 2.2vw, 26px)/1.45 var(--read); max-width: 40ch; margin: 0 0 30px; }
+.lede { font: italic 400 clamp(21px, 2.2vw, 26px)/1.45 var(--read); max-width: none; margin: 0 0 30px; }
 .empty-note { font-style: italic; color: var(--steel); font-size: 21px; margin: 0; }
 
 .btn {
